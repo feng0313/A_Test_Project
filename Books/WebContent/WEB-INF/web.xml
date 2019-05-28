@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <filter>
+    	<filter-name>EncodingFilter</filter-name>
+    	<filter-class>filter.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+    	<filter-name>EncodingFilter</filter-name>
+    	<url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet><!--图书servlet类路径配置-->
+    <servlet-name>BookesAllSearchServlet</servlet-name>
+    <servlet-class>servlet.BookesAllSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BooksRegisterServlet</servlet-name>
+    <servlet-class>servlet.BooksRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BooksSomeSearchServlet</servlet-name>
+    <servlet-class>servlet.BooksSomeSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BooksDeleteServlet</servlet-name>
+    <servlet-class>servlet.BooksDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BooksUpdateServlet</servlet-name>
+    <servlet-class>servlet.BooksUpdateServlet</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>BooksBianjiServlet</servlet-name>
+    <servlet-class>servlet.BooksBianjiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping><!--图书servlet类映射配置-->
+    <servlet-name>BookesAllSearchServlet</servlet-name>
+    <url-pattern>/BookesAllSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BooksRegisterServlet</servlet-name>
+    <url-pattern>/BooksRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BooksSomeSearchServlet</servlet-name>
+    <url-pattern>/BooksSomeSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+
+    <servlet-name>BooksDeleteServlet</servlet-name>
+
+    <url-pattern>/BooksDeleteServlet</url-pattern>
+
+  </servlet-mapping>
+
+  <servlet-mapping>
+
+    <servlet-name>BooksUpdateServlet</servlet-name>
+
+    <url-pattern>/BooksUpdateServlet</url-pattern>
+
+  </servlet-mapping>
+
+    <servlet-mapping>
+
+    <servlet-name>BooksBianjiServlet</servlet-name>
+
+    <url-pattern>/BooksBianjiServlet</url-pattern>
+
+  </servlet-mapping>
+
+</web-app>
+
+ 
